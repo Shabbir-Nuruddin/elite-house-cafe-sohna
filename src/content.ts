@@ -27,7 +27,7 @@ export const SITE: Site = {
     weight: 700,
     upper: false,
   },
-  scene: "cup",
+  scene: "pour",
   align: "left",
   hero: {
     title: [
@@ -88,9 +88,34 @@ export const SITE: Site = {
     address: { en: "Satya Plaza, near GD Goenka University, Sohna", hi: "सत्या प्लाज़ा, जीडी गोयनका यूनिवर्सिटी के पास, सोहना" },
     note: { en: "Opens at 9am on Fridays, 10am other days.", hi: "शुक्रवार को सुबह 9 बजे, बाकी दिन 10 बजे खुलता है।" },
   },
+  pour: { from: "pan", into: "kadhai", liquid: "#e2a95c", foam: "#f4d39c", thick: 2.2 },
+  story: [
+    { kicker: { en: "The kofta", hi: "कोफ़्ता" }, title: { en: "Malai kofta, zafrani gravy.", hi: "मलाई कोफ़्ता, ज़ाफ़रानी ग्रेवी।" }, quote: "The Malai/Zafrani Kofta and smoky Mix Veg are outstanding, and starters like Dahi ke Sholey are a treat. A fantastic family-friendly spot, easily one of the best in Sohna till date." },
+    { kicker: { en: "The service", hi: "सर्विस" }, title: { en: "Ask for Bharat.", hi: "भरत भैया को पूछिए।" }, quote: "what made it even more enjoyable was Mr. Bharat's service. Definitely one of the most helpful, sincere, hardworking, and polite people in the hospitality industry." },
+    { kicker: { en: "The space", hi: "जगह" }, title: { en: "A separate space for families.", hi: "परिवारों के लिए अलग जगह।" }, quote: "with a separate, comfortable space for families" },
+  ],
+  build: {
+    title: { en: "Plan your visit in a few taps", hi: "कुछ टैप में अपनी विज़िट प्लान करें" },
+    body: { en: "Family or friends, what to eat, how many and when. It lands on WhatsApp exactly as you see it.", hi: "परिवार या दोस्त, क्या खाना है, कितने लोग और कब। मैसेज व्हाट्सऐप पर ठीक ऐसे ही पहुंचेगा।" },
+    pick: { label: { en: "Seating", hi: "बैठक" }, options: [
+      { name: { en: "Family space", hi: "फ़ैमिली स्पेस" } },
+      { name: { en: "College group", hi: "कॉलेज ग्रुप" } },
+    ] },
+    items: [
+      { en: "Malai Kofta", hi: "मलाई कोफ़्ता" },
+      { en: "Mix Veg", hi: "मिक्स वेज" },
+      { en: "Dahi ke Sholey", hi: "दही के शोले" },
+      { en: "Lacha Paratha", hi: "लच्छा पराठा" },
+      { en: "Malai Chaap", hi: "मलाई चाप" },
+      { en: "Paneer Chilly", hi: "पनीर चिली" },
+    ],
+    people: true,
+    when: true,
+    hello: { en: "Hi Elite House Cafe, I'd like to book:", hi: "नमस्ते एलीट हाउस कैफ़े, मुझे बुक करना है:" },
+  },
   waHello: {
     en: "Hi Elite House, I'd like to book a table. Family / group: , date: , people: ",
     hi: "नमस्ते एलीट हाउस, मुझे टेबल बुक करनी है। फ़ैमिली / ग्रुप: , तारीख़: , लोग: ",
   },
-  order: ["dishes", "feature", "reviews", "gallery", "visit"],
+  order: ["build", "dishes", "feature", "reviews", "gallery", "visit"],
 };
